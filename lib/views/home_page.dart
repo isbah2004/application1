@@ -105,65 +105,66 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          Constants.sizedBox(height: 15.0),
-          FadeInDown(
-            duration: const Duration(milliseconds: 1600),
-            child: Expanded(
-              child: Text(
-                AppText.subtitle,
-                style: AppTextStyles.normalStyle(),
-              ),
-            ),
-          ),
-          Constants.sizedBox(height: 22.0),
-          FadeInUp(
-            duration: const Duration(milliseconds: 1600),
-            child: SizedBox(
-                height: 48,
-                child: Row(
-                  children: [
-                    ClipRRect(
-                        borderRadius: BorderRadius.circular(15),
-                        child: InkWell(
-                            onTap: () async {
-                              Uri uri = Uri.parse(AppText.email);
-                              if (!await launcher.launchUrl(uri)) {
-                                return debugPrint('Could Not Launch Email');
-                              }
-                            },
-                            child: Image.asset(AppAssets.gmail))),
-                    Constants.sizedBox(width: 30),
-                    InkWell(
-                        onTap: () {
-                          launcher.launchUrl(Uri.parse(AppText.linkedInUrl),
-                              mode: launcher.LaunchMode.externalApplication);
-                        },
-                        child: Image.asset(AppAssets.linkedIn)),
-                    Constants.sizedBox(width: 30),
-                    InkWell(
-                        onTap: () async {
-                          Uri uri = Uri.parse(AppText.phoneNumber);
-                          if (!await launcher.launchUrl(uri)) {
-                            return debugPrint('Error');
-                          }
-                        },
-                        child: const Icon(
-                          Icons.phone,
-                          size: 50,
-                        )),
-                  ],
-                )),
-          ),
-          Constants.sizedBox(height: 18.0),
-          FadeInUp(
-            duration: const Duration(milliseconds: 1800),
-            child: AppButtons.buildMaterialButton(
-                onTap: () {
-                  launcher.launchUrl(Uri.parse(AppText.resumeUrl),
-                      mode: launcher.LaunchMode.externalApplication);
-                },
-                buttonName: 'Show Resume'),
-          ),
+        //   Constants.sizedBox(height: 15.0),
+        //   FadeInDown(
+        //     duration: const Duration(milliseconds: 1600),
+        //     child: Expanded(
+        //       child: Text(
+        //         AppText.subtitle,
+        //         style: AppTextStyles.normalStyle(),
+        //       ),
+        //     ),
+        //   ),
+        //   Constants.sizedBox(height: 22.0),
+        //   FadeInUp(
+        //     duration: const Duration(milliseconds: 1600),
+        //     child: SizedBox(
+        //         height: 48,
+        //         child: Row(
+        //           children: [
+        //             ClipRRect(
+        //                 borderRadius: BorderRadius.circular(15),
+        //                 child: InkWell(
+        //                     onTap: () async {
+        //                       Uri uri = Uri.parse(AppText.email);
+        //                       if (!await launcher.launchUrl(uri)) {
+        //                         return debugPrint('Could Not Launch Email');
+        //                       }
+        //                     },
+        //                     child: Image.asset(AppAssets.gmail))),
+        //             Constants.sizedBox(width: 30),
+        //             InkWell(
+        //                 onTap: () {
+        //                   launcher.launchUrl(Uri.parse(AppText.linkedInUrl),
+        //                       mode: launcher.LaunchMode.externalApplication);
+        //                 },
+        //                 child: Image.asset(AppAssets.linkedIn)),
+        //             Constants.sizedBox(width: 30),
+        //             InkWell(
+        //                 onTap: () async {
+        //                   Uri uri = Uri.parse(AppText.phoneNumber);
+        //                   if (!await launcher.launchUrl(uri)) {
+        //                     return debugPrint('Error');
+        //                   }
+        //                 },
+        //                 child: const Icon(
+        //                   Icons.phone,
+        //                   size: 50,
+        //                 )),
+        //           ],
+        //         )),
+        //   ),
+        //   Constants.sizedBox(height: 18.0),
+        //   FadeInUp(
+        //     duration: const Duration(milliseconds: 1800),
+        //     child: AppButtons.buildMaterialButton(
+        //         onTap: () {
+        //           launcher.launchUrl(Uri.parse(AppText.resumeUrl),
+        //               mode: launcher.LaunchMode.externalApplication);
+        //         },
+        //         buttonName: 'Show Resume'),
+        //   ),
+        // 
         ],
       ),
     );
