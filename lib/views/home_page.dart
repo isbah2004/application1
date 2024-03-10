@@ -157,13 +157,13 @@ class _HomePageState extends State<HomePage> {
         //   Constants.sizedBox(height: 18.0),
         //   FadeInUp(
         //     duration: const Duration(milliseconds: 1800),
-        //     child: AppButtons.buildMaterialButton(
-        //         onTap: () {
-        //           launcher.launchUrl(Uri.parse(AppText.resumeUrl),
-        //               mode: launcher.LaunchMode.externalApplication);
-        //         },
-        //         buttonName: 'Show Resume'),
-        //   ),
+            AppButtons.buildMaterialButton(
+                onTap: () {
+                  launcher.launchUrl(Uri.parse(AppText.resumeUrl),
+                      mode: launcher.LaunchMode.externalApplication);
+                },
+                buttonName: 'Show Resume'),
+          // );
         // 
         ],
       ),
