@@ -105,16 +105,16 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          Constants.sizedBox(height: 15.0),
-          FadeInDown(
-            duration: const Duration(milliseconds: 1600),
-            child: Expanded(
-              child: Text(
-                AppText.subtitle,
-                style: AppTextStyles.normalStyle(),
-              ),
-            ),
-          ),
+          // Constants.sizedBox(height: 15.0),
+          // FadeInDown(
+          //   duration: const Duration(milliseconds: 1600),
+          //   child: Expanded(
+          //     child: Text(
+          //       AppText.subtitle,
+          //       style: AppTextStyles.normalStyle(),
+          //     ),
+          //   ),
+          // ),
         //   Constants.sizedBox(height: 22.0),
         //   FadeInUp(
         //     duration: const Duration(milliseconds: 1600),
